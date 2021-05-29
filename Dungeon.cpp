@@ -103,63 +103,63 @@ void Dungeon::initialenemy()
 //动态贴图方式
 void Dungeon::initialMapString()
 {
-    DungeonStytle[0][0]="border-image: url(:/DungeonNew/image/DungeonNew/0.png);";
-    DungeonStytle[1][0]="border-image: url(:/DungeonNew/image/DungeonNew/1.png);";
-    DungeonStytle[2][0]="border-image: url(:/DungeonNew/image/DungeonNew/2/20.png);";
+    DungeonStytle[0][0]="border-image: url(:/DungeonNew/image/DungeonNew/0.png);";//wall
+    DungeonStytle[1][0]="border-image: url(:/DungeonNew/image/DungeonNew/1.png);";//ground
+    DungeonStytle[2][0]="border-image: url(:/DungeonNew/image/DungeonNew/2/20.png);";//coin flicker
     DungeonStytle[2][1]="border-image: url(:/DungeonNew/image/DungeonNew/2/21.png);";
     DungeonStytle[2][2]="border-image: url(:/DungeonNew/image/DungeonNew/2/22.png);";
     DungeonStytle[2][3]="border-image: url(:/DungeonNew/image/DungeonNew/2/23.png);";
-    DungeonStytle[3][0]="border-image: url(:/DungeonNew/image/DungeonNew/3/30.png);";
+    DungeonStytle[3][0]="border-image: url(:/DungeonNew/image/DungeonNew/3/30.png);";//star flicker
     DungeonStytle[3][1]="border-image: url(:/DungeonNew/image/DungeonNew/3/31.png);";
     DungeonStytle[3][2]="border-image: url(:/DungeonNew/image/DungeonNew/3/32.png);";
     DungeonStytle[3][3]="border-image: url(:/DungeonNew/image/DungeonNew/3/33.png);";
-    DungeonStytle[4][0]="border-image: url(:/DungeonNew/image/DungeonNew/4/40.png);";
+    DungeonStytle[4][0]="border-image: url(:/DungeonNew/image/DungeonNew/4/40.png);";//mouse moving
     DungeonStytle[4][1]="border-image: url(:/DungeonNew/image/DungeonNew/4/41.png);";
     DungeonStytle[4][2]="border-image: url(:/DungeonNew/image/DungeonNew/4/42.png);";
     DungeonStytle[4][3]="border-image: url(:/DungeonNew/image/DungeonNew/4/43.png);";
-    DungeonStytle[5][0]="border-image: url(:/DungeonNew/image/DungeonNew/5/50.png);";
+    DungeonStytle[5][0]="border-image: url(:/DungeonNew/image/DungeonNew/5/50.png);";//question
     DungeonStytle[5][1]="border-image: url(:/DungeonNew/image/DungeonNew/5/51.png);";
     DungeonStytle[5][2]="border-image: url(:/DungeonNew/image/DungeonNew/5/52.png);";
     DungeonStytle[5][3]="border-image: url(:/DungeonNew/image/DungeonNew/5/53.png);";
     DungeonStytle[6][0]="border-image: url(:/DungeonNew/image/DungeonNew/6.png);";
     DungeonStytle[7][0]="border-image: url(:/DungeonNew/image/DungeonNew/7.png);";
-    DungeonStytle[8][0]="border-image: url(:/DungeonNew/image/DungeonNew/8.png);";
-    DungeonStytle[9][0]="border-image: url(:/DungeonNew/image/DungeonNew/9.png);";
+    DungeonStytle[8][0]="border-image: url(:/DungeonNew/image/DungeonNew/8.png);";//bonus mushroom
+    DungeonStytle[9][0]="border-image: url(:/DungeonNew/image/DungeonNew/9.png);";//bonus mushroom
     DungeonStytle[10][0]="border-image: url(:/DungeonNew/image/DungeonNew/10.png);";
-    DungeonStytle[11][0]="border-image: url(:/DungeonNew/image/DungeonNew/11/110.png);";
+    DungeonStytle[11][0]="border-image: url(:/DungeonNew/image/DungeonNew/11/110.png);";//enemy
     DungeonStytle[11][1]="border-image: url(:/DungeonNew/image/DungeonNew/11/111.png);";
     DungeonStytle[11][2]="border-image: url(:/DungeonNew/image/DungeonNew/11/112.png);";
     DungeonStytle[11][3]="border-image: url(:/DungeonNew/image/DungeonNew/11/113.png);";
-    DungeonStytle[12][0]="border-image: url(:/DungeonNew/image/DungeonNew/12/120.png);";
+    DungeonStytle[12][0]="border-image: url(:/DungeonNew/image/DungeonNew/12/120.png);";//enemy
     DungeonStytle[12][1]="border-image: url(:/DungeonNew/image/DungeonNew/12/121.png);";
     DungeonStytle[12][2]="border-image: url(:/DungeonNew/image/DungeonNew/12/122.png);";
     DungeonStytle[12][3]="border-image: url(:/DungeonNew/image/DungeonNew/12/123.png);";
-    DungeonStytle[14][0]="border-image: url(:/DungeonNew/image/DungeonNew/14.png);";
-    DungeonStytle[15][0]="border-image: url(:/DungeonNew/image/DungeonNew/15.png);";
-    DungeonStytle[16][0]="border-image: url(:/DungeonNew/image/DungeonNew/16.png);";
-    DungeonStytle[17][0]="border-image: url(:/DungeonNew/image/DungeonNew/17.png);";
-    DungeonStytle[18][0]="border-image: url(:/DungeonNew/image/DungeonNew/18.png);";
-    DungeonStytle[19][0]="border-image: url(:/DungeonNew/image/DungeonNew/19.png);";
-    DungeonStytle[20][0]="border-image: url(:/DungeonNew/image/DungeonNew/20.png);";
-    DungeonStytle[21][0]="border-image: url(:/DungeonNew/image/DungeonNew/21.png);";
-    DungeonStytle[22][0]="border-image: url(:/DungeonNew/image/DungeonNew/22.png);";
-    DungeonStytle[23][0]="border-image: url(:/DungeonNew/image/DungeonNew/23.png);";
-    DungeonStytle[24][0]="border-image: url(:/DungeonNew/image/DungeonNew/24.png);";
-    DungeonStytle[25][0]="border-image: url(:/DungeonNew/image/DungeonNew/25/250.png);";
+    DungeonStytle[14][0]="border-image: url(:/DungeonNew/image/DungeonNew/14.png);";//ladder
+    DungeonStytle[15][0]="border-image: url(:/DungeonNew/image/DungeonNew/15.png);";//ladder
+    DungeonStytle[16][0]="border-image: url(:/DungeonNew/image/DungeonNew/16.png);";//red door
+    DungeonStytle[17][0]="border-image: url(:/DungeonNew/image/DungeonNew/17.png);";//yellow door
+    DungeonStytle[18][0]="border-image: url(:/DungeonNew/image/DungeonNew/18.png);";//blue door
+    DungeonStytle[19][0]="border-image: url(:/DungeonNew/image/DungeonNew/19.png);";//red key
+    DungeonStytle[20][0]="border-image: url(:/DungeonNew/image/DungeonNew/20.png);";//yellow key
+    DungeonStytle[21][0]="border-image: url(:/DungeonNew/image/DungeonNew/21.png);";//blue key
+    DungeonStytle[22][0]="border-image: url(:/DungeonNew/image/DungeonNew/22.png);";//guike
+    DungeonStytle[23][0]="border-image: url(:/DungeonNew/image/DungeonNew/23.png);";//guike
+    DungeonStytle[24][0]="border-image: url(:/DungeonNew/image/DungeonNew/24.png);";//sword
+    DungeonStytle[25][0]="border-image: url(:/DungeonNew/image/DungeonNew/25/250.png);";//enemy
     DungeonStytle[25][1]="border-image: url(:/DungeonNew/image/DungeonNew/25/251.png);";
     DungeonStytle[25][2]="border-image: url(:/DungeonNew/image/DungeonNew/25/252.png);";
     DungeonStytle[25][3]="border-image: url(:/DungeonNew/image/DungeonNew/25/253.png);";
-    DungeonStytle[26][0]="border-image: url(:/DungeonNew/image/DungeonNew/26/260.png);";
+    DungeonStytle[26][0]="border-image: url(:/DungeonNew/image/DungeonNew/26/260.png);";//enemy
     DungeonStytle[26][1]="border-image: url(:/DungeonNew/image/DungeonNew/26/261.png);";
     DungeonStytle[26][2]="border-image: url(:/DungeonNew/image/DungeonNew/26/262.png);";
     DungeonStytle[26][3]="border-image: url(:/DungeonNew/image/DungeonNew/26/263.png);";
-    DungeonStytle[27][0]="border-image: url(:/DungeonNew/image/DungeonNew/27/270.png);";
+    DungeonStytle[27][0]="border-image: url(:/DungeonNew/image/DungeonNew/27/270.png);";//enemy
     DungeonStytle[27][1]="border-image: url(:/DungeonNew/image/DungeonNew/27/271.png);";
     DungeonStytle[27][2]="border-image: url(:/DungeonNew/image/DungeonNew/27/272.png);";
     DungeonStytle[27][3]="border-image: url(:/DungeonNew/image/DungeonNew/27/273.png);";
-    DungeonStytle[28][0]="border-image: url(:/DungeonNew/image/DungeonNew/28.png);";
-    DungeonStytle[29][0]="border-image: url(:/DungeonNew/image/DungeonNew/29.png);";
-    DungeonStytle[31][0]="border-image: url(:/DungeonNew/image/DungeonNew/31.png);";
+    DungeonStytle[28][0]="border-image: url(:/DungeonNew/image/DungeonNew/28.png);";//sword
+    DungeonStytle[29][0]="border-image: url(:/DungeonNew/image/DungeonNew/29.png);";//sword
+    DungeonStytle[31][0]="border-image: url(:/DungeonNew/image/DungeonNew/31.png);";//shop
     DungeonStytle[32][0]="border-image: url(:/DungeonNew/image/DungeonNew/32.png);";
     DungeonStytle[33][0]="border-image: url(:/DungeonNew/image/DungeonNew/33.png);";
     DungeonStytle[34][0]="border-image: url(:/DungeonNew/image/DungeonNew/34.png);";
@@ -258,9 +258,9 @@ void Dungeon::initialMap()
     int num=1;
     while(1)
     {
-
         if(num==1)
         {
+
             int tempmap[12][16]={
                 //余江南改
                 15,1,1,41,41,3,1,1,1,1,1,1,1,1,1,1,
@@ -277,6 +277,26 @@ void Dungeon::initialMap()
                 0,2,2,2,2,2,0,2,1,2,0,1,3,10,3,0
 
             };
+        /*
+        if(num==1)
+        {
+            int tempmap[12][16]={
+                //无墙测试版
+                15,1,1,41,41,3,1,1,1,1,1,1,1,1,1,1,
+                1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+                1,8,1,1,1,3,17,1,17,1,1,22,2,5,1,1,
+                1,1,1,11,1,1,1,1,1,1,1,23,2,21,1,1,
+                1,1,1,17,1,1,1,1,1,1,1,1,17,1,1,1,
+                1,21,1,1,1,1,1,1,1,1,3,2,4,1,1,1,
+                1,21,1,11,1,1,1,1,17,3,2,4,11,1,1,1,
+                1,1,1,17,1,1,1,1,1,1,1,1,1,1,1,1,
+                1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,
+                1,8,2,2,2,5,1,1,17,1,1,1,17,1,1,1,
+                1,8,2,2,2,5,1,21,2,2,1,1,1,4,1,1,
+                1,2,2,2,2,2,1,2,1,2,1,1,3,11,3,1
+
+            };
+            */
             for(int i=0;i<12;i++)
             {
                 for(int j=0;j<16;j++)
@@ -285,7 +305,8 @@ void Dungeon::initialMap()
                 }
             }
         }
-       if(num==2)
+
+        if(num==2)
         {
            int tempmap[12][16]={
                14,1,18,1,1,1,1,1,1,1,1,1,1,1,1,0,

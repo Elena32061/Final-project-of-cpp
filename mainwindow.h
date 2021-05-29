@@ -19,7 +19,6 @@
 #include <QMediaPlaylist>
 #include <QPoint>
 #include <QProgressBar>
-#include "maze.h"
 #include "Dungeon.h"
 #include "interface.h"
 #include "storewidget.h"
@@ -40,7 +39,7 @@ private:
 private:
     interface *surface;//开始界面
     QWidget *MainWidget;//中心窗口
-    QWidget *MazeWidget[60][60];//地图窗口数组
+    QWidget *DungeonWidget[12][16];//地图窗口数组
     QWidget *People;//角色
     QString character[12];//角色图片字符串
     QGridLayout *gLayout_Map;//地图网格布局管理器
@@ -52,45 +51,9 @@ private:
     void mouseMoveEvent(QMouseEvent *event);//鼠标移动事件
 private slots:
     void ShowWidget();//显示界面
-/**********************   迷宫模式     ***********************/
-private:
-    int iNum;//自动寻路显示路径辅助变量
-    int lastheight;//上一次设置的迷宫高度
-    int lastwidth;//上一次设置的迷宫宫宽度
-    int StytleNum;//地图风格数字
-    bool isPlay;//键盘操作标识（用于限制操作时自动寻路和AI）
-    bool isShow;//显示地图标识（用于刷新迷宫地图时销毁上次生成的窗口）
-    bool issurface;//开始界面标识（用于标识开始界面已加载完成）
-    bool isAIAnimationButton;//AI移动标识
-    bool isAutoMoveButton;//自动寻路标识
-private:
-    maze m;//迷宫类
-    QWidget *Controlwidget;//控制界面
-    QGridLayout *gLayout_Control;//控制界面网格布局
-    QSpinBox *sp_w;//迷宫大小输入
-    QSpinBox *sp_h;
-    QLabel *label_Stytle;//地图风格显示
-    QComboBox *SelectMapStytle;//地图风格选择
-    QPushButton *AIAnimationButton;//AI操作
-    QPushButton *AutoMoveButton;//自动寻路
-    QPushButton *quitButton;//返回主菜单按钮
-    QSequentialAnimationGroup *group;//AI操作动画组
-    QTimer *timer;//定时器
-private:
-    void initialControlWidget();//初始化控制界面
-    void ShowMaze_Layout();//显示迷宫地图
-    void hideMaze();//隐藏迷宫地图
-    void resetMaze();//重置迷宫
-private slots:
-    void moveCharacter();//AI移动时人物图片切换
-    void CreateMaze_Layout();//创建迷宫
-    void ShowPath();//自动寻路显示路径
-    void ShowAnimation();//显示动画
-    void timeStart();//定时器开启
-    void MapStytleSet();//设置地图风格
-    void quit();//返回主菜单
 /**********************   地牢模式     ***********************/
 private:
+    bool issurface;//开始界面标识（用于标识开始界面已加载完成）
     Dungeon d;//地牢类
     QWidget *infoWidget;//状态显示界面
     int moveDirection;//移动方向

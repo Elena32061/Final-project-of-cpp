@@ -28,14 +28,6 @@ interface::interface(QWidget *parent) :
                          "QPushButton:hover{background-color:palegreen; color: orangered;}"
                          "QPushButton:pressed{background-color:aquamarine;border-style:inset;}";
 
-    button_classical= new QPushButton(this);//开始界面上的play按钮
-    button_classical->setGeometry(280,285,300,50);
-    button_classical->setText("maze mode");
-    button_classical->setStyleSheet(button_style);
-    button_classical->setFont(font);
-    connect(button_classical,SIGNAL(clicked()),this,SLOT(classicalStart()));
-
-
     button_Dungeon=new QPushButton(this);
     button_Dungeon->setGeometry(280,325,320,50);
     button_Dungeon->setText("dungeon mode");
@@ -58,7 +50,7 @@ interface::interface(QWidget *parent) :
     connect(button_About,SIGNAL(clicked()),this,SLOT(AboutShow()));
 
     isok=false;
-    classicalisok=false;
+    //classicalisok=false;
     Dungeonisok=false;
 
     BGM=new QMediaPlayer(this);
@@ -81,42 +73,20 @@ void interface::paintEvent(QPaintEvent*)
     }
     else
     {
-        if(classicalisok)
-        {
-            QImage pixmap(":/interface/image/interface/MazeDemo.png");//迷宫介绍页
-            painter->drawImage(geometry(),pixmap);
-        }
-        else
-        {
-            QImage pixmap(":/interface/image/interface/SetNamePage.PNG");//设置角色名页
-            painter->drawImage(geometry(),pixmap);
-        }
+        QImage pixmap(":/interface/image/interface/SetNamePage.PNG");//设置角色名页
+        painter->drawImage(geometry(),pixmap);
     }
     painter->end();
 }
-void interface::showMianMenu()
+void interface::showMainMenu()
 {
-    button_classical->show();
     button_Dungeon->show();
     button_Quit->show();
     button_About->show();
 }
 
-void interface::classicalStart()
-{
-    button_classical->hide();//play按钮隐藏
-    button_Dungeon->hide();
-    button_Quit->hide();
-    button_About->hide();
-    msgLabel->show();//提示消息显示
-
-    timer->start(100);//启动计数器
-    probar->show();//进度前显示
-    classicalisok=true;
-}
 void interface::DungeonStart()
 {
-    button_classical->hide();//play按钮隐藏
     button_Dungeon->hide();
     button_Quit->hide();
     button_About->hide();
